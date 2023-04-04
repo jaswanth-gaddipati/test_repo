@@ -1,9 +1,10 @@
-test_action:
-on: workflow-dispatch
+name: test_action
+on: workflow_dispatch
 jobs:
   print_output:
     runs-on: ubuntu-latest
     
+    steps:
     - name: print hai
     - run: echo 'hai'
       
